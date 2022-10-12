@@ -5,12 +5,15 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 let context = canvas.getContext('2d');
 
-let y=50;
-
 function drawsquares(x,y, size) {
+    let r= Math.floor(Math.random() * 255);
+    let g= Math.floor(Math.random() * 255);
+    let b = Math.floor(Math.random() * 255);
+    let color= "rgb("+ r + "," + g + "," + b +")";
+
     context.beginPath();
-    context.rect(x, y, size, size);;
-    context.fillStyle="#"+ Math.floor(Math.random() * 999999);
+    context.rect(x, y, size, size);
+    context.fillStyle= color;
     context.fill();
 }
 
