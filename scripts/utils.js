@@ -32,3 +32,7 @@ export function rgba(r, g, b, a){
     let rgba = "rgba(" + r + "," + g + "," + b + ","+ a +")";
     return rgba;
 }
+export function hsla(h, s, l, a){
+    let hsla = "hsla(" + h + "," + s + "," + l + ","+ a +")";
+    return hsla;
+}
