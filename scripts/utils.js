@@ -17,7 +17,18 @@ export function strokeCircle(x, y, r) {
     context.stroke();
 }
 
+export function fillCircle(x, y, r) {
+    context.beginPath();
+    context.arc(x, y, r, 0, Math.PI*2);
+    context.fill();
+}
+
 export function rgb(r, g, b){
     let rgb = "rgb(" + r + "," + g + "," + b +")";
     return rgb;
+}
+
+export function rgba(r, g, b, a){
+    let rgba = "rgba(" + r + "," + g + "," + b + ","+ a +")";
+    return rgba;
 }

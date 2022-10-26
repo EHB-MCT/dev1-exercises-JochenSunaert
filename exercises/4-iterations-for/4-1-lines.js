@@ -31,5 +31,5 @@ context.lineWidth = '2'
         Utils.drawLine(0 + (stepV * j)  ,0, width - (stepV * j) , height);
     }
 
-    
+
 }
